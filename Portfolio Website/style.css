@@ -6,14 +6,17 @@
 :root{
     --font-dancing-script: 'Dancing Script', cursive;
     --font-rounded: 'M PLUS Rounded 1c', sans-serif;
+    --font-keania-1: 'Keania One', sans-serif;
 }
 
 body{
-    background-color: #c9f2c7;
+    background-color: #b0e2ac;
 }
 
 .bg-col-2{
-    background-color: #629460;
+    background-color: #467845;
+    position: relative;
+    z-index: 100;
     background-position: fixed;
 }
 
@@ -36,6 +39,7 @@ body{
 #home, #about, #contact, #skills, #resume{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.9);
+    text-shadow: 8px 0px 8px #000000;
 }
 
 .navigation-bar{
@@ -51,26 +55,30 @@ body{
 .profile-image-name{
     color: rgba(255, 255, 255, 0.5);
     -webkit-text-stroke-color: #000;
-    -webkit-text-stroke-width: 0.9px;
+    -webkit-text-stroke-width: 0.8px;
     font-family: var(--font-dancing-script);
     font-size: 45px;
     text-decoration: none;
     margin-right: 25vw;
     display: inline-block;
     width: 20vw;
+    text-shadow: 8px 0px 8px #000000;
+    cursor: context-menu;
 }
 
 .hover:hover{
     text-decoration: underline;
     text-underline-offset: 5px;
-    color: #1f4506;
+    color: #fff;
+    position: relative;
+    top: -3px;
 }
 
 /* body:has(#home:hover) pre{
     CSS Code;
 } */
 
-.triangle-down{
+/* .triangle-down{
     margin-left: 52.8vw;
     display: block;
     width: 0;
@@ -78,4 +86,34 @@ body{
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
     border-top: 13px solid #629460;
+} */
+
+.hero-1{
+    height: calc(100vh - 7vh);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero-1 > :first-child{
+    color: #224819;
+    font-family: var(--font-keania-1);
+    font-size: xxx-large;
+    position: relative;
+    left: -180px;
+}
+
+.typing{
+    text-decoration: underline;
+}
+
+.blinking{
+    position: relative;
+    left: -10px;
+    /* animation: blink 1s timing-function 0.5s infinite; */
+}
+
+.bg-col{
+    background-color: #7ab666;
+    height: calc(100vh - 7vh);
 }
