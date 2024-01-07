@@ -3,6 +3,7 @@
     padding: 0;
     color: white;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 .bg-col{
@@ -12,10 +13,10 @@
 
 .bg-img{
     background-image: url("assests/images/home-netflix.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 88vh;
-    /* width: 100%; */
+    /* background-position: center center; */
+    /* background-repeat: no-repeat; */
+    height: 100%;
+    width: 100vw;
     background-size: cover;
     box-shadow: inset 1000px 1000px 1000px rgba(0, 0, 0, 0.65);
 }
@@ -30,7 +31,7 @@
     justify-content: space-around;
     align-items: center;
     height: 10vh;
-    column-gap: 250px;
+    column-gap: 20vw;
 }
 
 .navbar{
@@ -38,7 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 35px;
+    column-gap: 3vw;
 }
 
 .lang-select{
@@ -105,8 +106,8 @@
 .email{
     background-color: rgba(30, 30, 30, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 3px;
-    height: 45px;
+    border-radius: 5px;
+    height: 5.5vh;
     width: 25vw;
     padding: 5px 10px;
 }
@@ -123,7 +124,7 @@
     font-size: 20px;
     font-weight: 550;
     margin: 0px 0px 0px 5px;
-    width: 200px;
+    width: 12vw;
 }
 
 .heading{
@@ -138,7 +139,8 @@
 .bg-col-black{
     background-color: #000;
     height: 68vh;
-    margin-top: 10px;
+    margin-top: 1vh;
+    width: 100vw;
 }
 
 .flex-div{
@@ -146,6 +148,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .flex-div-info{
@@ -223,6 +226,7 @@
     background-color: #000;
     height: 120vh;
     margin-top: 10px;
+    width: 100vw;
 }
 
 .flex-faq{
@@ -287,6 +291,7 @@ li{
     background-color: #000;
     height: 50vh;
     margin-top: 10px;
+    width: auto;
 }
 
 .footer-select{
