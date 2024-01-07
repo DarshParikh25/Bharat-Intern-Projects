@@ -7,7 +7,7 @@ function getWeather() {
         return;
     }
 
-    const apiKey = `6c48ba85b939326060ff63112a8243c1`; // Replace with your actual API key
+    const apiKey = `6c48ba85b939326060ff63112a8243c1`;
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`;
 
     fetch(apiUrl)
